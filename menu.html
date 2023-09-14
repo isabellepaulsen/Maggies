@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menus</title>
+	<style>
+		a.navigation {
+			color:black;
+		}
+	</style>
+	</head>
+<body>
+
+	<div id="navbar" class="nav" >
+		<a  class="navigation" href="aboutus.html">About&nbsp;Us</a>
+		<a  class="navigation" id="active" href="menu.html">Menus</a>
+		<a href="index.html"><img class="navimg" src="images/logo.png" id="icon2"alt="Maggies Farm Wood Fired Pizza"></a>
+		<a  class="navigation" href="catering.html">Catering</a>
+		<a  class="navigation" href="gallery.html">Gallery</a>
+		<a href="javascript:void(0);" class="icon" id="icon" style="color:black" onclick="openNav()">&#9776;</a>
+	</div>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="index.html"><img class="sidenavimg" id="icon2" src="images/logo.png" alt="Maggies Farm Wood Fired Pizza"></a>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="aboutus.html">About&nbsp;Us</a>
+		<a href="menu.html" id="active">Menus</a>
+		<a href="catering.html">Catering</a>
+		<a href="gallery.html">Gallery</a>
+	</div>
+	
+	
+	<div class="nav2">
+		<button id="dinnerbutton" class="menusbuttons dinnermenubutton" onclick="myDinnerFunction()">Dinner Menu</button>
+		<button id="specialsbutton" class="menusbuttons" onclick="mySpecialsFunction()">Weekly Specials Menu</button>
+		<button id="dessertbutton" class="menusbuttons" onclick="myDessertFunction()">Dessert Menu</button>
+		<button id="drinksbutton" class="menusbuttons" onclick="myDrinksFunction()">Drinks Menu</button>
+	</div>
+	
+	
+	
+	<div id="dinner" class="dinnermen">
+		<p class="menuh4">&#9733; favorites     &#9445; vegetarian</p>
+		<p class="menuh1">Antipasti</p>
+		<p class="menuitem">Castelvetrano Olives<span>&#9445; 7</span></p>
+		<p class="menudescrip">Marinated in lemon-infused EVOO</p>
+		<p class="menuitem">Jerry's Meatballs<span>&#9733; 12</span></p>
+		<p class="menudescrip">Blend of pork & beef topped with savory marinara and grated<br>pecorino, served with house-made bread</p>
+		<p class="menuitem">Bagna Fagioli<span>&#9445; 10</span></p>
+		<p class="menudescrip">Creamy white-bean puree infused with roasted garlic and a<br>touch of Espelette, served with house-made bread</p>
+		<p class="menuitem">Whipped Ricotta<span>&#9445; 10</span></p>
+		<p class="menudescrip">Bellwether Farms ricotta whipped with shallots, garlic, parsley,<br>sprinkled with Espelette, served with house-made bread</p>
+		<p class="menuitem">Roasted Brussels Sprouts<span><span style="float:left; margin-right:4px;">&#9733; </span><span> &#9445; 10</span></span></p>
+		<p class="menudescrip">Wood-fire roasted, topped with toasted almonds, grated Grana<br>Padano, EVOO drizzle<br><em>Add bacon +1</em></p>
+		<p class="menuitem">Fresh Italian Burrata<span>&#9445; 15</span></p>
+		<p class="menudescrip">Cream-infused fresh mozzarella drizzled with EVOO and aged<br>balsamic, served with a sprinkle of Espelette & house-made bread</p>
+		<p class="menuitem">Wilted Spinach<span>&#9445; 7</span></p>
+		<p class="menudescrip">Cooked with raisins and served with a zesty lemon wedge</p>
+		<p class="menuitem">Oven-roasted Wings<span>&#9733; 10</span></p>
+		<p class="menudescrip">Seasoned with oregano, garlic, salt & pepper, served with a side of<br>creamy ranch dressing, and fresh carrots & celery on the side</p>
+		<p class="menuitem">Bread Bites<span>&#9445; 7</span</p>
+		<p class="menudescrip">Maggies "00" flour pizza dough tossed in your choice of:<br>sun-dried tomato seasoning or garlic butter<br><em>Add ranch or marinara +.50</em></p>
+		
+		<p class="menuh1">Salad</p>
+		<p class="menuh4">Extra side dressing +1.50</p>
+		<p class="menuitem">Maggie's Farm Salad<span><span style="float:left; margin-right:4px;">&#9733; </span><span> &#9445; 13</span></span></p>
+		<p class="menudescrip">Mixed greens, red bell peppers, grape tomatoes, goat cheese,<br>pistachios, all tossed ina zesty lemon vinaigrette dressing</p>
+		<p class="menuitem">For a table of four<span>28</span></p>
+		<p class="menuitem">Melrose Grand Salad<span>15</span></p>
+		<p class="menudescrip">Mixed greens, bacon, pesto chicken, Calabrese, tomatoes,<br>pepperoncini, white beans, eggs, blue cheese, lemon vinaigrette</p>
+		<p class="menuitem">Side Salad<span>&#9445; 7</span></p>
+		<p class="menudescrip">Mixed greens, grape tomatoes, red bell pepers, lemon vinaigrette</p>
+	
+		<p class="menuh1">Pizza</p>
+		<p class="menuh4">Gluten-free crust +4</p>
+		<p class="menuitem">Maggie's Margherita<span><span style="float:left; margin-right:4px;">&#9733; </span><span> &#9445; 17</span></span></p>
+		<p class="menudescrip">Four-cheese blend, tomato sauce, basil, garlic</p>
+		<p class="menuitem">Classic Cheese<span>&#9445; 15</span></p>
+		<p class="menudescrip">Four-cheese blend, tomato sauce</p>
+		<p class="menuitem">Classic Sausage<span>18</span></p>
+		<p class="menudescrip">Four-cheese blend, tomato sauce, Maggie's sausage, garlic</p>
+		<p class="menuitem">Classic Pepperoni<span>&#9733; 17</span></p>
+		<p class="menudescrip">Four-cheese blend, tomato sauce, pepperoni, garlic</p>
+		<p class="menuitem">Jerry's Meatballs & Roasted Bells<span>18</span></p>
+		<p class="menudescrip">Four-cheese blend, tomato sauce, meatball crumbles,<br>roasted red bell peppers, garlic</p>
+		<p class="menuitem">Prosciutto (Red/White)<span>19</span></p>
+		<p class="menudescrip">Four-cheese blend, tomato sauce (red), prosciutto, garlic</p>
+		<p class="menuitem">Pesto<span>&#9445; 18</span></p>
+		<p class="menudescrip">Pesto, tomato, fresh mozzarella</p>
+		<p class="menuitem">The Mark<span>&#9733; 18</span></p>
+		<p class="menudescrip">Pesto, tomato, Maggie's sausage, fresh mozzarella</p>
+		<p class="menuitem">Pizza Bianca<span><span style="float:left; margin-right:4px;">&#9733; </span><span> &#9445; 15</span></span></p>
+		<p class="menudescrip">Four-cheese blend, garlic<br><em>Add pesto chicken +3</em></p>
+		<p class="menuitem">The Ellie<span>18</span></p>
+		<p class="menudescrip">Carmelized onion, tangy blue cheese, crispy bacon</p>
+		<p class="menuitem">Spinaci<span>&#9445; 18</span></p>
+		<p class="menudescrip">Four-cheese blend, spinach, garlic, topped with pine nuts</p>
+		<p class="menuitem">Funghi<span><span style="float:left; margin-right:4px;">&#9733; </span><span> &#9445; 19</span></span></p>
+		<p class="menudescrip">Four-cheese blend, mushrooms, poached egg*, roasted<br>garlic, arugula garnish</p>
+		<p class="menuitem">Chicken Sausage<span>18</span></p>
+		<p class="menudescrip">Four-cheese blend, house-made chicken sausage,<br>artichoke hearts, garlic, EVOO finish</p>
+		<p class="menuitem">Soppressata<span>19</span></p>
+		<p class="menudescrip">Four-cheese blend, Italian dry-cured salami, pepperoncini,<br>fresh oregano, EVOO drizzle, garlic</p>
+		<p class="menuitem">Scampi<span>19</span></p>
+		<p class="menudescrip">Four-cheese blend, Garlicky shrimp, celery, lemon EVOO</p>
+	
+		<p class="menuh1">Pasta</p>
+		<p class="menuitem">Cannelloni<span><span style="float:left; margin-right:4px;">&#9733; </span><span> &#9445; 15</span></span></p>
+		<p class="menudescrip">House-made pasta stuffed with a blend of spinach and<br>ricotta, topped with savory tomato & Mornay sauces</p>
+		<p class="menuitem">Seven-Layer Lasagna Bolognese<span>20</span></p>
+		<p class="menudescrip">House-made bolognese and layers of lemon ricotta, provolone,<br>Romano, Parmesan, mozzarella, topped with chiffonaded basil</p>
+		<p class="menuitem">White Lasagna<span>&#9445; 18</span></p>
+		<p class="menudescrip">House-made pesto Alfredo sauce with spinach, mushrooms,<br>zucchini, lemon ricotta, blend of provolone, mozzarella, Romano<br><em>Add pesto chicken +3<br>Add shrimp +4</em></p>
+		<p class="menuitem">Baked Pasta Shells with Cheese Sauce<span>&#9445; 12</span></p>
+		<p class="menudescrip">House-made pasta shells baked with a creamy & rich quattro<br>formaggi sauce, topped with crispy breaded herbs</p>
+		
+		<br><br>
+		<div class="additions">
+			<p style="text-align:center;font-size:20px; margin-bottom:8px;">Pasta & Salad Additions</p>
+			<p style="text-align:center; margin-top:5px; font-size:14px">(unless otherwise noted)</p>
+			<div class="add">
+				<p class="ad">Shrimp<span>+6</span></p>
+				<p class="ad">Bacon<span>+3</span></p>
+				<p class="ad">Pesto Chicken<span>+4</span></p>
+				<p class="ad">Roasted Tomatoes<span>+1</span></p>
+			</div>
+			<br>
+		</div>
+		
+		<br><br>
+		<p class="menudescrip">*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of food-borne illnesses, especially if you have certain medical conditions</p>
+	
+	</div>
+	
+	<div id="specials" class="menus">
+		<p class="menuh1">Pizza</p>
+		<p class="menuitem">Sweet Corn Pizza<span>20</span></p>
+		<p class="menudescrip">Crafted with sweet, fresh Iowa corn, crispy bacon, Maggie's four-cheese blend, drizzled with olive oil and a touch of tangy pepperoncini</p>
+		
+		<p class="menuh1">Pasta</p>
+		<p class="menuitem">Rigatoni Bolognese<span>18</span></p>
+		<p class="menudescrip">Rich three-meat slow-cooked sauce with garlic and rigatoni pasta, topped with Grana Padano, shaved provolone, chiffonaded basil</p>
+	
+		<p class="menuh1">Specialty Cocktails</p>
+		<table>
+		<tr>
+		<td style="width:7%"><img style="width:50px" src="images/Cuc-Mel Breeze.png"></td>
+		<td><p class="menuitem">Cucumber-Melon Breeze<span>10</span></p>
+		<p class="menudescrip">Cucumber-lime vodka, Midori melon liqueur, lime juice, ginger beer</p></td>
+		</tr>
+		<tr>
+		<td style="width:7%"><img style="width:60px" src="images/Pink Gin Fizz.png"></td>
+		<td><p class="menuitem">Pink Gin Fizz<span>9</span></p>
+		<p class="menudescrip">Tanqueray gin, cranberry juice, lemon juice, simple, soda water</p>
+		</td></tr>
+		<tr>
+		<td style="width:7%"><img style="width:70px" src="images/Jungle Bird.png"></td>
+		<td><p class="menuitem">Jungle Bird<span>11</span></p>
+		<p class="menudescrip">Coconut rum, Bacardi, Campari, pineapple juice, jalapeno-infused simple syrup, lime juice</p>
+		</td></tr>
+		</table>
+	
+	</div>
+	
+	
+	<div id="dessert" class="menus">
+		<p class="menuh1">Desserts</p>
+		<p class="menuitem">Italian Chocolate Mousse<span>8</span></p>
+		<p class="menudescrip">Chocolate, Italian ricotta, whipped cream, berries,<br>house-made shortbread</p>
+		<p class="menuitem">Jerry's Cheesecake<span>9</span></p>
+		<p class="menudescrip">With fresh fruit compote</p>
+		<p class="menuitem">Gelato<span>4</span></p>
+		<p class="menudescrip">Vanilla or chocolate, house-made shortbread</p>
+		<p class="menuitem">Maggie's Raspberry Ice Cream<span>4.5</span></p>
+		<p class="menudescrip">House-madeice cream with fresh raspberries, raspberry<br>sauce, house-made shortbread</p>
+		<p class="menuitem">Freshly Baked Cookie<span>3</span></p>
+		<p class="menudescrip">Chocolate chip or macadamia nut</p>
+		<p class="menuitem">Affogato<span>7</span></p>
+		<p class="menudescrip">Vanilla gelato, freshly brewed espresso, amaretti cookie</p>
+		<p class="menuitem">Cannoli<span>6</span></p>
+		<p class="menudescrip">Chocolate-dipped pastry shell filled with ricotta, pistachios</p>
+		<p class="menuh1">Beverages</p>
+		<div class="bev">
+			<p class="menuitem">Espresso (decaf available)<span>3</span></p>
+			<p class="menuitem">Macchiato<span>3.5</span></p>
+			<p class="menuitem">Cappuccino<span>4</span></p>
+			<p class="menuitem">Latte<span>4.5</span></p>
+			<p class="menuitem">Americano<span>3.5</span></p>
+			<p class="menuitem">Cafe del Sol Drip Coffee<span>3</span></p>
+			<p class="menuitem">Pot of Hot Tea<span>3</span></p>
+		</div>
+	</div>
+	
+	
+	<div id="drinks" class="menus">
+		<p class="menuh1">Cocktails</p>
+		<p class="menuitem">Bottle-aged Negroni<span>11</span></p>
+		<p class="menudescrip">Tanqueray gin, Campari, Carpano Antica vermouth, rocks</p>
+		<p class="menuitem">Bottle-aged Manhatten<span>11</span></p>
+		<p class="menudescrip">Four Roses bourbon, Carpano Antica vermouth, bitters, rocks</p>
+		<p class="menuitem">Fiero Spritz<span>11</span></p>
+		<p class="menudescrip">Martini & Rossi Fiero, Prosecco, simple, splash of club soda, rocks</p>
+		<p class="menuitem">Spiked Italian Sodas<span>11</span></p>
+		<p class="menudescrip">All-fruit purée, vodka, lime juice, simple, club soda<br>Choice of cherry pear or mango raspberry</p>
+		
+		<table style="width:100%">
+		<tr>
+		<td>
+		<div class="bevtd">
+		<p class="menuh1">Wine</p>
+			<p class="menuh2">Sparkling & Rose</p>
+			<p class="menuitem">Ca' Furlan Prosecco<span>9/32</span></p>
+			<p class="menuitem">Mas Fi Brut Cava<span>9/32</span></p>
+			<p class="menuitem">Frico Rosato<span>9/30</span></p>
+			<p class="menuitem">Tintero Moscato<span>9/29</span></p>
+			<p class="menuh2">White</p>
+			<p class="menuitem">Cora Pinot Grigio<span>8.5/26</span></p>
+			<p class="menuitem">Dipinti Sauvignon Blanc Trevenezie<span>9/32</span></p>
+			<p class="menuitem">Jean Bouchard Chardonnay<span>9/30</span></p>
+			<p class="menuh2">Red</p>
+			<p class="menuitem">Imprint Primitivo<span>10.5/35</span></p>
+			<p class="menuitem">The Pinot Project Pinot Noir<span>9/30</span></p>
+			<p class="menuitem">Maestro del Pomidoro<span>8/24</span></p>
+			<p class="menuitem">La Posta "Paulucci" Malbec<span>10/34</span></p>
+			<p class="menuitem">Giuliano Rosati Valpolicella<span>9/32</span></p>
+			<p class="menuitem">Point Ormond Cabernet Sauvignon<span>10/33</span></p>
+			<p class="menuitem">Chianti Riserva<span>10/33</span></p>
+			<p class="menuitem">Brunello di Montalcino<span>-/80</span></p>
+			<p class="menuitem">GD Vajra Barolo<span>-/70</span></p>
+		</div>
+		</td>
+		<td>
+		<div class="bevtd" style="float:right">
+		<p class="menuh1">Beer</p>
+			<p class="menuh2">Cans & Bottles</p>
+			<p class="menuitem">Budweiser<span>4</span></p>
+			<p class="menuitem">Bud Light<span>4</span></p>
+			<p class="menuitem">Miller Lite<span>4</span></p>
+			<p class="menuitem">Budweiser NA<span>4</span></p>
+			<p class="menuitem">Blue Moon<span>4.5</span></p>
+			<p class="menuitem">Fat Tire<span>4.5</span></p>
+			<p class="menuitem">Peroni<span>4.5</span></p>
+			<p class="menuitem">Sierra Nevada Pale Ale<span>4.5</span></p>
+			<p class="menuitem">Menabrea Bionda Premium Lager<span>5</span></p>
+			<p class="menuitem">Guinness<span>5.5</span></p>
+			<p class="menuh2">Draft Beer</p>
+			<p class="menuitem">Lion Bridge Yard Sale IPA<span>7</span></p>
+			<p class="menuitem">LB Compensation<span>7</span></p>
+			<p class="menuitem">LB TAG Tangerine Wheat<span>7</span></p>
+			<p class="menuitem">Peace Tree Blonde Fatale<span>7</span></p>
+			<p class="menuitem">Stella Artois<span>7</span></p>
+			<p class="menuitem">Angry Orchard Cider<span>7</span></p>
+		</div>
+		</td>
+		</tr>
+		</table>
+	
+		<p class="menuh1">Non-Alcoholic</p>
+		<p class="menuitem">Soda<span>2.5</span></p>
+		<p class="menudescrip">Coke, Diet Coke, Sprite, Barq's Root Beer</p>
+		<p class="menuitem">San Pellegrino<span>3</span></p>
+		<p class="menudescrip">Sparkling Water 500mL</p>
+		<p class="menuitem">Classic Favorites<span>3</span></p>
+		<p class="menudescrip">Iced Tea, Sweet Tea, Lemonade, Arnold Palmer</p>
+		<p class="menuitem">Italian Sodas<span>5</span></p>
+		<p class="menudescrip">Cherry Pear, Mango Raspberry</p>
+		
+	</div>
+	
+	
+	<br><br>
+
+	<div class="contactus">
+		<div class="confloat">
+		<div class="conleft">
+			<p class="h3">Contact Us</p>
+			<p class="con"><img class="contact" src="images/phone.png">(319)351-4588</p>
+			<p class="con"><img class="contact" src="images/location.png">1308 MELROSE AVE. IOWA CITY, IOWA</p>
+			<p class="con"><img class="contact" src="images/email.png">INFO@MAGGIESFARMPIZZA.COM</p>
+		</div>
+		<div class="conright">
+			<div class="insidehoursright">
+			<table class="bottomtable">
+			<tr>
+			<td class="halftable">
+			<a class="buttonlink" href="https://www.toasttab.com/maggies-farm-pizza/v3" target="_blank"><p class="orderbutton2">Order Pickup</p></a>
+			</td>
+			<td class="halftable">
+			<a class="buttonlink" href="https://www.chomp.delivery/r/2167/restaurants/delivery/Pizza/Maggies-Farm-Wood-Fired-Pizza-Iowa-City" target="_blank"><p class="orderbutton2">Order Delivery</p></a>
+			</td>
+			</tr>
+			</table>
+			</div>
+		</div>
+		</div>
+		<hr>
+		<table class="bottom"><tr>
+			<td class="bottomtd" style="width:60px">
+			<a href="https://www.instagram.com/maggiesfarmpizza/" target="_blank"><img class="contact2" src="images/instagram.png"></a>
+			</td>
+			<td class="bottomtd">
+			<a href="https://www.facebook.com/MaggiesFarmWoodFiredPizza/" target="_blank"><img class="contact2" src="images/facebook.png"></a>
+			</td>
+			<td class="bottomtdr">
+			<p class="pbottom">&copy; 2022 Maggie's Farm Wood Fired Pizza</p>
+			<p class="pbottom">Website by Isabelle Paulsen Web Design</p>
+			</td>
+		</tr></table>
+	
+	</div>
+</body>
+
+<script>
+	function openNav() {
+	  if(window.innerWidth <= 540){
+		document.getElementById("mySidenav").style.width = "100%";
+		}
+	  else {
+		document.getElementById("mySidenav").style.width = "250px";
+		e = document.getElementById("icon");
+		e.classList.add("remove");
+		e2 = document.getElementById("icon2");
+		e2.classList.add("remove");
+		e3 = document.getElementById("icon3");
+		e3.classList.add("remove");
+		}
+
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	  e.classList.remove("remove");
+	  e2.classList.remove("remove");
+	  e3.classList.remove("remove");
+	}
+	var dinner = document.getElementById("dinner");
+	var specials = document.getElementById("specials");
+	var dessert = document.getElementById("dessert");
+	var drinks = document.getElementById("drinks");
+	
+	var dinnerbutton = document.getElementById("dinnerbutton");
+	var specialsbutton = document.getElementById("specialsbutton");
+	var dessertbutton = document.getElementById("dessertbutton");
+	var drinksbutton = document.getElementById("drinksbutton");
+	
+	function myDinnerFunction() {
+		dinner.classList.remove("notvisible");
+		dinner.classList.add("visible");
+		specials.classList.remove("visible");
+		dessert.classList.remove("visible");
+		drinks.classList.remove("visible");
+		
+		dinnerbutton.classList.remove("notactive");
+		dinnerbutton.classList.add("activebutton");
+		specialsbutton.classList.remove("activebutton");
+		dessertbutton.classList.remove("activebutton");
+		drinksbutton.classList.remove("activebutton");
+	}
+	
+	function mySpecialsFunction() {
+		dinner.classList.remove("visible");
+		dinner.classList.add("notvisible");
+		specials.classList.add("visible");
+		dessert.classList.remove("visible");
+		drinks.classList.remove("visible");
+		
+		dinnerbutton.classList.remove("activebutton");
+		dinnerbutton.classList.add("notactive");
+		specialsbutton.classList.add("activebutton");
+		dessertbutton.classList.remove("activebutton");
+		drinksbutton.classList.remove("activebutton");
+	}
+	
+	function myDessertFunction() {
+		dinner.classList.remove("visible");
+		dinner.classList.add("notvisible");
+		specials.classList.remove("visible");
+		dessert.classList.add("visible");
+		drinks.classList.remove("visible");
+		
+		dinnerbutton.classList.remove("activebutton");
+		dinnerbutton.classList.add("notactive");
+		specialsbutton.classList.remove("activebutton");
+		dessertbutton.classList.add("activebutton");
+		drinksbutton.classList.remove("activebutton");
+	}
+	
+	
+	function myDrinksFunction() {
+		dinner.classList.remove("visible");
+		dinner.classList.add("notvisible");
+		specials.classList.remove("visible");
+		dessert.classList.remove("visible");
+		drinks.classList.add("visible");
+		
+		dinnerbutton.classList.remove("activebutton");
+		dinnerbutton.classList.add("notactive");
+		specialsbutton.classList.remove("activebutton");
+		dessertbutton.classList.remove("activebutton");
+		drinksbutton.classList.add("activebutton");
+	}
+</script>
+
